@@ -1,28 +1,23 @@
 {% set name = "ternary-diagram" %}
-{% set version = "3.0.1" %}
-
+{% set version = "3.1.0" %}
 package:
   name: {{ name|lower }}
   version: {{ version }}
-
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/ternary_diagram-{{ version }}.tar.gz
-  sha256: be614c048dddfbe1a30815637735ca40ef1086efbc33b99487e60f92de15b41e
-
+  sha256: 53000a1a67fc4b61bd92f87066294235eae7d6273665c191d43c17bc802ddce2
 build:
   noarch: python
   script: {{ PYTHON }} -m pip install . -vv
   number: 0
-
 requirements:
   host:
     - python >=3.6
     - pip
   run:
     - python >=3.6
-    - numpy
+    - numpy >=1.20
     - matplotlib-base
-
 test:
   imports:
     - ternary_diagram
@@ -30,13 +25,11 @@ test:
     - pip check
   requires:
     - pip
-
 about:
-  home: http://github.com/yu9824/ternary_diagram/
   summary: This package makes it easier for you to draw beautiful ternary diagram without pymatgen.
+  dev_url: http://github.com/yu9824/ternary_diagram/
   license: MIT
   license_file: LICENSE
-
 extra:
   recipe-maintainers:
     - yu9824

@@ -1,6 +1,6 @@
 {% set name = "ternary-diagram" %}
 {% set version = "3.1.0" %}
-{% set python_min = "3.6" %}
+{% set python_min = "3.7" %}
 
 package:
   name: {{ name|lower }}

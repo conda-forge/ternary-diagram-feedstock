@@ -1,5 +1,5 @@
 {% set name = "ternary-diagram" %}
-{% set version = "3.2.0" %}
+{% set version = "3.2.1" %}
 {% set python_min = "3.8" %}
 
 package:
@@ -8,7 +8,7 @@ package:
 
 source:
   url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/ternary_diagram-{{ version }}.tar.gz
-  sha256: e32887d82eff52b5034a7885c45012d4a77643d3e1f909451a68505e27d25f20
+  sha256: 9c58793619dd84a08c3d5c2aea08c91b53c6766d515edbc34d4b728518e1f331
 
 build:
   noarch: python

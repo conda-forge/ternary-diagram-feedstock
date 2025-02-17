@@ -35,9 +35,9 @@ test:
     - python {{ python_min }}
 
 about:
-  home: http://github.com/yu9824/ternary_diagram/
+  home: http://github.com/yu9824/ternary-diagram/
   summary: This package makes it easier for you to draw beautiful ternary diagram without pymatgen.
-  dev_url: http://github.com/yu9824/ternary_diagram/
+  dev_url: http://github.com/yu9824/ternary-diagram/
   license: MIT
   license_file: LICENSE
 

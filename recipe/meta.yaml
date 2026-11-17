@@ -1,6 +1,6 @@
 {% set name = "ternary-diagram" %}
-{% set version = "3.2.2" %}
-{% set python_min = "3.8" %}
+{% set version = "3.3.0" %}
+{% set python_min = "3.9" %}
 
 package:
   name: {{ name|lower }}
@@ -8,7 +8,7 @@ package:
 
 source:
   url: https://files.pythonhosted.org/packages/source/{{ name[0] }}/{{ name }}/ternary_diagram-{{ version }}.tar.gz
-  sha256: f0f56044856904e8623f365a2bb1a33856487641e13f7f89a4d2a92c94198998
+  sha256: ea7485d9ee5aad846e160db4ee10678e7553cf9513c7cc875545012c59f46e11
 
 build:
   noarch: python
@@ -19,7 +19,8 @@ requirements:
   host:
     - python {{ python_min }}
     - pip
-    - setuptools
+    - setuptools >=77.0.3
+    - setuptools-scm >=7
   run:
     - python >={{ python_min }}
     - numpy >=1.20
